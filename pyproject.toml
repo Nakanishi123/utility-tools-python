@@ -7,5 +7,9 @@ requires-python = ">=3.13"
 dependencies = [
     "pymupdf>=1.27.1",
     "python-pptx>=1.0.2",
+    "reazonspeech-k2-asr",
     "sherpa-onnx>=1.12.25",
 ]
+
+[tool.uv.sources]
+reazonspeech-k2-asr = { git = "https://github.com/reazon-research/ReazonSpeech.git", subdirectory = "pkg/k2-asr" }
